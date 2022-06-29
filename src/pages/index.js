@@ -4,10 +4,8 @@ import Layout from '../components/Layout';
 
 export default function Index() {
   return (
-    <Container fontFamily='Red Hat Mono'>
-      <Layout>
-        <Text>Hello Word</Text>
-      </Layout>
+    <Container fontFamily='Red Hat Mono' maxW='100vw' p='0'>
+      <Layout/>
     </Container>
   );
 }
