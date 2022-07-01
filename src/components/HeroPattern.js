@@ -4,8 +4,11 @@ import React from 'react';
 const HeroPattern = () => {
   return (
     <Center
-      transform='translate(26vw, -22rem)'
-      opacity='0.39'
+      transform={{
+        base: 'translate(5vw, -4rem)',
+        md: 'translate(26vw, -22rem)',
+      }}
+      opacity='0.5'
       maxW='100rem'
       w='full'
     >
