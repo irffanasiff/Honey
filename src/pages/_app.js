@@ -1,5 +1,6 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react';
 import { extendTheme, theme as chakraTheme } from '@chakra-ui/react';
+import Styles from '../styles/styles.css';
 
 const fonts = {
   ...chakraTheme.fonts,
@@ -27,6 +28,9 @@ const overrides = {
         background: '#ffffff',
         color: '#111111',
       },
+      // '*': {
+      //   outline: '1px solid red'
+      // }
     },
   },
 };

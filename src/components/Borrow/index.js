@@ -16,7 +16,7 @@ import Image from 'next/image';
 const Borrow = () => {
   const [widthLessThan1080] = useMediaQuery('(min-width: 1080px)');
   return (
-    <Container maxW='120rem' p='1rem'>
+    <Container maxW='120rem' p='1rem' pt='10rem'>
       <VStack>
         <Heading
           textAlign='center'
@@ -48,14 +48,17 @@ const Borrow = () => {
               <Center w='100%' h='full' bg='honey.yellow' rounded='6px'>
                 <Stack
                   overflow='hidden'
-                  flexDirection={widthLessThan1080 ? 'column' : 'row-reverse'}
+                  flexDirection={{
+                    base: 'column',
+                    md: `${widthLessThan1080 ? 'column' : 'row-reverse'}`,
+                  }}
                   w='100%'
                   h='full'
                   rounded='6px'
                   transform={
                     widthLessThan1080
-                      ? 'translate(-7px, -7px)'
-                      : 'translate(7px, -7px)'
+                      ? 'translate(7px, -7px)'
+                      : 'translate(-7px,-7px)'
                   }
                   border='2px solid black'
                   p='2rem'
@@ -86,18 +89,25 @@ const Borrow = () => {
                     />
                   </Center>
                   <VStack
-                    alignSelf={widthLessThan1080 ? 'start' : 'end'}
+                    alignSelf={{
+                      base: 'start',
+                      md: `${widthLessThan1080 ? 'start' : 'end'}`,
+                    }}
                     alignItems={'start'}
                     textAlign='start'
                   >
                     <Heading
-                      fontSize={{ base: '28px', md: '40px' }}
+                      fontSize={{ base: '22px', md: '40px' }}
                       letterSpacing={'-1.63 px'}
                       fontWeight='700'
                     >
                       NFT Loans
                     </Heading>
-                    <Text color='honey.darkGray' fontWeight='500'>
+                    <Text
+                      color='honey.darkGray'
+                      fontWeight='500'
+                      fontSize={{ base: 'sm', md: 'lg' }}
+                    >
                       Easier than Ever
                     </Text>
                   </VStack>
@@ -107,13 +117,13 @@ const Borrow = () => {
             <Wrap flex='70 1 auto' spacing='2.4rem' p='1rem'>
               <Center w='100%' bg='honey.yellow' rounded='6px'>
                 <Stack
-                  direction={{ base: 'row-reverse', md: 'row-reverse' }}
+                  direction={{ base: 'column', md: 'row-reverse' }}
                   rounded='6px'
                   p='1rem'
                   transform='translate(-6px, -6px)'
                   border='2px solid black'
                   background='white'
-                  alignItems={'end'}
+                  alignItems={{ base: 'start', md: 'end' }}
                   gap='1rem'
                   w='full'
                   justify={'space-between'}
