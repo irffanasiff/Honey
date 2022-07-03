@@ -19,11 +19,14 @@ const Hero = () => {
       <Stack minH='75vh' direction={{ base: 'column', lg: 'row' }}>
         <Center
           flexDirection='column'
-          alignItems={{ base: 'center', md: 'start' }}
+          alignItems={{ base: 'center', lg: 'start' }}
+          textAlign={{ base: 'center', lg: 'start' }}
+          mx='auto'
           maxW='3xl'
-          gap='2rem'
+          gap={{ base: '2rem', sm: '0rem', lg: '2rem' }}
+          border='2px solid red'
         >
-          <VStack p={{ base: '3rem', md: '0rem' }}>
+          <VStack p={{ base: '3rem', md: '4rem 3rem' }}>
             <Heading
               fontFamily='Red Hat Mono'
               fontWeight={{ base: '500' }}
@@ -39,21 +42,28 @@ const Hero = () => {
               color='honey.darkGray'
               letterSpacing={'-0.08rem'}
               fontWeight='500'
-              textAlign={{ base: 'center', md: 'left' }}
             >
               Honey’s mission is to empower NFT users with simple financial
               tools.
             </Text>
           </VStack>
-          <HStack spacing={{ base: '1rem', md: '2rem' }}>
+          <HStack
+            border='2px solid red'
+            backgroundColor='white'
+            spacing={{ base: '1rem', md: '2rem' }}
+          >
             <CustomButton dark={true}>EXPLORE APP</CustomButton>
             <CustomButton dark={false}>WATCH DEMO</CustomButton>
           </HStack>
         </Center>
-        <Center border='1px solid black' w='full'>
-          <Center w='40rem' h='40rem' position='relative'>
+        <Center border='2px solid red' w='full'>
+          <Center
+            w={{ base: '100vw', md: '40rem' }}
+            h={{ base: '100vw', md: '40rem' }}
+            position='relative'
+          >
             <Image
-              src='/HeroImg.png'
+              src='/HeroImg.gif'
               alt='nft'
               layout='fill'
               objectFit='contain'

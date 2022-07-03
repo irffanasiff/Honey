@@ -10,6 +10,7 @@ const HeroPattern = () => {
       }}
       opacity='0.5'
       maxW='100rem'
+      maxH={'100vh'}
       w='full'
     >
       <svg

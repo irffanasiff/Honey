@@ -4,7 +4,7 @@ import React from 'react';
 
 const Featured = () => {
   return (
-    <Container mt='4rem' p='2rem 0rem' maxW='100vw' bg='#FAFAFA'>
+    <Container mt='4rem' p='3rem 0rem' maxW='100vw' bg='#FAFAFA'>
       <Text
         mx='auto'
         fontSize={{ base: '14px', md: '18px' }}
@@ -12,9 +12,8 @@ const Featured = () => {
       >
         AS FEATURED IN
       </Text>
-      <Center mx='auto' maxW='6xl' w='full'>
+      <Center mx='auto' maxW='8xl' w='full'>
         <Wrap
-          mx='auto'
           alignItems={'center'}
           justify={{ base: 'center', lg: 'space-between' }}
           alignContent={'center'}
@@ -22,7 +21,7 @@ const Featured = () => {
           spacing='2rem'
           p='2rem'
         >
-          <Center w={{ base: '7rem', md: '8rem' }}>
+          <Center w={{ base: '7rem', md: '14rem' }}>
             <svg
               viewBox='0 0 193 28'
               fill='none'
@@ -70,7 +69,7 @@ const Featured = () => {
               />
             </svg>
           </Center>
-          <Center w={{ base: '7rem', md: '7rem' }}>
+          <Center w={{ base: '7rem', md: '10rem' }}>
             <svg
               viewBox='0 0 640 206'
               fill='none'
@@ -107,19 +106,19 @@ const Featured = () => {
             </svg>
           </Center>
           <Center
-            w={{ base: '7rem', md: '8rem' }}
+            w={{ base: '7rem', md: '13em' }}
             minH='4rem'
             position='relative'
           >
             <Image
-              src='/images/superteam.png'
+              src='/svg/superteam.svg'
               alt='superteamDAO'
               layout='fill'
               objectFit='contain'
             />
           </Center>
           <Center
-            w={{ base: '5rem', md: '5rem' }}
+            w={{ base: '5rem', md: '8rem' }}
             minH='2rem'
             position='relative'
           >
@@ -131,7 +130,7 @@ const Featured = () => {
               objectFit='contain'
             />
           </Center>{' '}
-          <Center w={{ base: '7rem', md: '8rem' }}>
+          <Center w={{ base: '7rem', md: '12rem' }}>
             <svg
               viewBox='0 0 182 29'
               fill='none'

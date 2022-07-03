@@ -13,19 +13,18 @@ const Layout = () => {
   return (
     <Container maxW='full' p='0'>
       <Container
+        opacity='0.03'
         position='fixed'
-        border='2px solid red'
         bg='white'
-        //position='absolute'
         maxW='100vw'
         overflow='hidden'
-        flexDirection={'row'}
         p='0'
       >
         <BGpattern />
         <BGpattern />
+        <BGpattern />
       </Container>
-      {/* <Container maxW='full' color='black' p='0'>
+      <Container maxW='full' color='black' p='0' bg='#fffffff7'>
         <Container
           bg='white'
           position='absolute'
@@ -41,7 +40,6 @@ const Layout = () => {
           p='0'
           display='flex'
           flexDirection={'column'}
-          //gap='6rem'
         >
           <Navbar />
           <Hero />
@@ -50,7 +48,7 @@ const Layout = () => {
           <Features />
           <NFTdetails />
         </Container>
-      </Container> */}
+      </Container>
     </Container>
   );
 };

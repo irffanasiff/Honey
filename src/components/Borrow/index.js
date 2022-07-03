@@ -16,7 +16,7 @@ import Image from 'next/image';
 const Borrow = () => {
   const [widthLessThan1080] = useMediaQuery('(min-width: 1080px)');
   return (
-    <Container maxW='120rem' p='1rem' pt='10rem'>
+    <Container maxW='100vw' p='1rem' pt='10rem'>
       <VStack>
         <Heading
           textAlign='center'
