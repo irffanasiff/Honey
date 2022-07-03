@@ -29,15 +29,30 @@ const Navbar = () => {
         <Center
           display={{ base: 'none', lg: 'flex' }}
           flexDirection='row'
-          fontSize='xl'
+          fontSize='20px'
           minH='100%'
-          gap={{ base: '0', md: '2vw', lg: '3.5vw' }}
-          maxW='36rem'
-          fontWeight='700'
+          maxW='32rem'
+          w='full'
+          justifyContent={'space-around'}
         >
-          <Text>Governance</Text>
-          <Text>Developer</Text>
-          <Text>Blogs</Text>
+          <Box as='button'>
+            <Text
+              fontWeight='500'
+              // _hover={{
+              //   textDecorationLine: 'underline',
+              //   textDecorationStyle: `wavy`,
+              //   textDecorationColor: `#E7B400`,
+              // }}
+            >
+              Governance
+            </Text>
+          </Box>
+          <Box as='button'>
+            <Text fontWeight='500'>Developer</Text>
+          </Box>
+          <Box as='button'>
+            <Text fontWeight='500'>Blogs</Text>
+          </Box>
         </Center>
 
         <Button display={{ base: 'none', lg: 'flex' }} variant={'unstyled'}>
@@ -55,7 +70,7 @@ const Navbar = () => {
           fontSize='2xl'
           p='2rem'
           gap='1.4rem'
-          fontWeight='600'
+          fontWeight='500'
         >
           <Text>Governance</Text>
           <Text>Developer</Text>

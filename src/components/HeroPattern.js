@@ -6,11 +6,11 @@ const HeroPattern = () => {
     <Center
       transform={{
         base: 'translate(5vw, -4rem)',
-        md: 'translate(26vw, -22rem)',
+        md: 'translate(30vw, -10rem)',
       }}
       opacity='0.5'
-      maxW='100rem'
-      maxH={'100vh'}
+      maxW='90rem'
+      maxH={'110vh'}
       w='full'
     >
       <svg

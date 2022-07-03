@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/react';
+import { Center, Container } from '@chakra-ui/react';
 import React from 'react';
 import Featured from './Featured';
 import Hero from './Hero';
@@ -26,9 +26,11 @@ const Layout = () => {
       </Container>
       <Container maxW='full' color='black' p='0' bg='#fffffff7'>
         <Container
+          border=''
           bg='white'
           position='absolute'
           maxW='100vw'
+          h='110vh'
           overflow='hidden'
           p='0'
         >

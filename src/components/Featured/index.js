@@ -4,7 +4,7 @@ import React from 'react';
 
 const Featured = () => {
   return (
-    <Container mt='4rem' p='3rem 0rem' maxW='100vw' bg='#FAFAFA'>
+    <Container border='' mt='4rem' p='3rem 0rem' maxW='100vw' bg='#FAFAFA'>
       <Text
         mx='auto'
         fontSize={{ base: '14px', md: '18px' }}

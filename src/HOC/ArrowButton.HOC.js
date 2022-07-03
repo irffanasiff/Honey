@@ -9,14 +9,14 @@ export const ArrowButton = (props) => {
   return (
     <Box
       backgroundColor={'black'}
-      w='fit-content'
+      w='12rem'
       h='fit-content'
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       transition='all 0.3s'
       display='flex'
       alignItems={'center'}
-      justifyContent='space-between'
+      justifyContent='space-evenly'
       gap='0.7rem'
       bg={'white'}
       p='0.6rem 1.4rem'
@@ -26,7 +26,7 @@ export const ArrowButton = (props) => {
       rounded='0.2rem'
       fontWeight={'800'}
       fontFamily='Inter'
-      boxShadow='inset 3px 3px 3px #E7B400'
+      boxShadow='inset 2px 2px 2px #E7B400'
     >
       {props.children}
       <Flex

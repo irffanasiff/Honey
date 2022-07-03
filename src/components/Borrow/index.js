@@ -57,9 +57,17 @@ const Borrow = () => {
                   rounded='6px'
                   transform={
                     widthLessThan1080
-                      ? 'translate(7px, -7px)'
-                      : 'translate(-7px,-7px)'
+                      ? 'translate(6px, -6px)'
+                      : 'translate(-6px,-6px)'
                   }
+                  _hover={{
+                    transform: `${
+                      widthLessThan1080
+                        ? 'translate(8px, -8px)'
+                        : 'translate(-8px,-8px)'
+                    }`,
+                  }}
+                  transition='all 0.3s'
                   border='2px solid black'
                   p='2rem'
                   background='white'
@@ -121,6 +129,10 @@ const Borrow = () => {
                   rounded='6px'
                   p='1rem'
                   transform='translate(-6px, -6px)'
+                  _hover={{
+                    transform: 'translate(-8px, -8px)',
+                  }}
+                  transition='all 0.3s'
                   border='2px solid black'
                   background='white'
                   alignItems={{ base: 'start', md: 'end' }}
@@ -185,6 +197,10 @@ const Borrow = () => {
                     justify='center'
                     rounded='6px'
                     transform='translate(-6px, -6px)'
+                    _hover={{
+                      transform: 'translate(-8px, -8px)',
+                    }}
+                    transition='all 0.3s'
                     border='2px solid black'
                     p='1rem'
                     background='white'
@@ -219,6 +235,10 @@ const Borrow = () => {
                     w='100%'
                     rounded='6px'
                     transform='translate(-6px, -6px)'
+                    _hover={{
+                      transform: 'translate(-8px, -8px)',
+                    }}
+                    transition='all 0.3s'
                     border='2px solid black'
                     p='1rem'
                     background='white'
