@@ -16,32 +16,29 @@ const Layout = () => {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta property='og:title' content='Honey' key='ogtitle' />
+
+        <meta property='og:url' content='https://honey-one.vercel.app/' />
+        <meta property='og:title' content='Honey Finance' />
         <meta
           property='og:description'
           content='We are a decentralised protocol and liquidity solution, we will help you to unlock liquidity kept in non-fungible assets to be used in DeFi. '
-          key='ogdesc'
         />
-        {/* Twitter */}
-        <meta name='twitter:card' content='summary' key='twcard' />
-        <meta name='twitter:creator' content='@myHoneyFinance' key='twhandle' />
-
-        {/* Open Graph */}
-        <meta property='og:url' content='Honey-one.vercel.app' key='ogurl' />
         <meta
           property='og:image'
           content='https://res.cloudinary.com/demoniirfan/image/upload/v1656839040/Honey/Frame_10192_3_f6hxtk.png'
-          key='ogimage'
         />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta property='twitter:domain' content='honey-one.vercel.app' />
+        <meta property='twitter:url' content='https://honey-one.vercel.app/' />
+        <meta name='twitter:title' content='Honey Finance' />
         <meta
-          property='og:site_name'
-          content='Honey Finance'
-          key='ogsitename'
-        />
-        <meta property='og:title' content='Honey' key='ogtitle' />
-        <meta
-          property='og:description'
+          name='twitter:description'
           content='We are a decentralised protocol and liquidity solution, we will help you to unlock liquidity kept in non-fungible assets to be used in DeFi. '
-          key='ogdesc'
+        />
+        <meta
+          name='twitter:image'
+          content='https://res.cloudinary.com/demoniirfan/image/upload/v1656839040/Honey/Frame_10192_3_f6hxtk.png'
         />
         <meta charSet='utf-8' />
         <title>Honey</title>
