@@ -63,8 +63,12 @@ const Hero = () => {
             backgroundColor='white'
             spacing={{ base: '1rem', md: '2rem' }}
           >
-            <CustomButton dark={true}>EXPLORE APP</CustomButton>
-            <CustomButton dark={false}>WATCH DEMO</CustomButton>
+            <Box as='button'>
+              <CustomButton dark={true}>EXPLORE APP</CustomButton>
+            </Box>
+            <Box as='button'>
+              <CustomButton dark={false}>WATCH DEMO</CustomButton>
+            </Box>
           </HStack>
         </Center>
         <Center w={{ base: '100%', lg: '40%' }}>
