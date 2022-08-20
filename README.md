@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Dhire
 
-This was the demo app i created for Superteam dao Honey finance bounty.
+This was the demo app i created for SuperteamDAO [Honey finance mission](https://superteam.fun/missions/honey-finance-landing-page-development).
